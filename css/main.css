@@ -1,0 +1,86 @@
+/* todo start global rules */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* todo end global rules */
+
+/* todo design */
+
+body {
+    background-color: rgb(192, 226, 238);
+}
+
+.qr {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+    margin-top: 60px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+@media (max-width:768px) {
+    .qr {
+        width: 300px;
+        height: 525px;
+        margin-top: 130px;
+    }
+
+    .qr .des p:nth-of-type(1) {
+        font-size: 24px !important;
+        margin-bottom: 25px !important;
+    }
+
+    .qr .des p:nth-of-type(2) {
+        margin-left: 0 !important;
+        width: 265px !important;
+    }
+
+    .qr .image {
+        margin-bottom: 25px;
+    }
+}
+
+.qr .image {
+    margin-bottom: 30px;
+}
+
+.qr .image img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.qr .des p:nth-of-type(1) {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.qr .des p:nth-of-type(2) {
+    text-align: center;
+    width: 273px;
+    color: #777;
+    font-size: 18px;
+    margin-left: 40px;
+    line-height: 1.4;
+}
+
+/* todo end design */
